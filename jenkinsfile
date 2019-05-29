@@ -1,21 +1,71 @@
 pipeline {
+
     agent any
 
     stages {
-        stage('Build') {
+
+        stage('SCM') {
+
             steps {
-                echo 'Building..'
+
+                 git ""                           
+
+                                                  echo "this is step 2
+
+                //
+
             }
+
         }
+
         stage('Test') {
+
             steps {
-                echo 'Testing..'
+
+                                                   echo "this is step1"
+
+                //
+
             }
+
         }
+
         stage('Deploy') {
+
             steps {
-                echo 'Deploying....'
+
+                                                echo "this is step1"
+
+                //
+
             }
+
         }
+
+                                stage('Deploy') {
+
+            steps {
+
+                                                echo "this is step1"
+
+                //
+
+            }
+
+        }
+
+                                stage('Deploy') {
+
+            steps {
+
+                                                echo "this is step1"
+
+                //
+
+            }
+
+        }
+
     }
+
 }
